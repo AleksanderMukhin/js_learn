@@ -290,23 +290,23 @@
   // console.log(`Число больше чем ${threshold}: ${numbers[i]}`); // 18, 29, 34
 
  ////-----task 12----
-  const a = ["Mango"];
-  const b = a;
-console.log(a); // ["Mango"]
-console.log(b); // ["Mango"]
+//   const a = ["Mango"];
+//   const b = a;
+// console.log(a); // ["Mango"]
+// console.log(b); // ["Mango"]
 
-// Изменим массив, добавив еще один элемент, используя указатель из a
-a.push("Poly");
-console.log(a);
-console.log(b);
+// // Изменим массив, добавив еще один элемент, используя указатель из a
+// a.push("Poly");
+// console.log(a);
+// console.log(b);
 
 // Результат повторяется
-b.push("Ajax");
-console.log(a); // ["Mango", "Poly", "Ajax"]
-console.log(b); 
-//-------task 13-----
+// b.push("Ajax");
+// console.log(a); // ["Mango", "Poly", "Ajax"]
+// console.log(b); 
+// //-------task 13-----
 
-const name = "Mango";
-console.log(name.split(""));
-const message = "JavaScript это интересно";
-console.log(message.split(" "));
+// const name = "Mango";
+// console.log(name.split(""));
+// const message = "JavaScript это интересно";
+// console.log(message.split(" "));
