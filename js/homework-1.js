@@ -265,27 +265,48 @@
 //   console.log(Number(character));
 // }
 
-const clients = ["Mango", "Poly", "Ajax"];
-const clientNameToFind = "Poly";
-let message;
+// const clients = ["Mango", "Poly", "Ajax"];
+// const clientNameToFind = "Poly";
+// let message;
 
-for (const client of clients) {
-  // На каждой итерации будем проверять совпадает ли элемент массива с
-  // именем клиента. Если совпадает то мы записываем в message сообщение
-  // об успехе и делаем break чтобы не искать дальше
-  if (client === clientNameToFind) {
-    message = "Клиент с таким именем есть в базе данных!";
-    break;
-  }
+// for (const client of clients) {
+//   // На каждой итерации будем проверять совпадает ли элемент массива с
+//   // именем клиента. Если совпадает то мы записываем в message сообщение
+//   // об успехе и делаем break чтобы не искать дальше
+//   if (client === clientNameToFind) {
+//     message = "Клиент с таким именем есть в базе данных!";
+//     break;
+//   }
 
-  // Если они не совпадают то запишем в message сообщение об отсутствии имени
-  message = "Клиента с таким именем нету в базе данных!";
-}
+//   // Если они не совпадают то запишем в message сообщение об отсутствии имени
+//   message = "Клиента с таким именем нету в базе данных!";
+// }
 
-console.log(message);
+// console.log(message);
 
 
 
-console.log()
+// console.log()
   // console.log(`Число больше чем ${threshold}: ${numbers[i]}`); // 18, 29, 34
 
+ ////-----task 12----
+  const a = ["Mango"];
+  const b = a;
+console.log(a); // ["Mango"]
+console.log(b); // ["Mango"]
+
+// Изменим массив, добавив еще один элемент, используя указатель из a
+a.push("Poly");
+console.log(a);
+console.log(b);
+
+// Результат повторяется
+b.push("Ajax");
+console.log(a); // ["Mango", "Poly", "Ajax"]
+console.log(b); 
+//-------task 13-----
+
+const name = "Mango";
+console.log(name.split(""));
+const message = "JavaScript это интересно";
+console.log(message.split(" "));
