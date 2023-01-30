@@ -219,11 +219,18 @@
 // console.log("Min number: ", minNumber);
 
 
-const friends = ['Kiwi', 'Ajax', 'Troja', 'Ahiles'];
-let string = '';
-for (const friend of friends) {
-  string += friend + ',';
-}
-string = string.slice(0, string.length - 1);
+// const friends = ['Kiwi', 'Ajax', 'Troja', 'Ahiles'];
+// // let string = '';
+// // for (const friend of friends) {
+// //   string += friend + ',';
+// // }
+// // string = string.slice(0, string.length - 1);
 
-console.log(string)
+// const string = friends.join(", ")
+
+// console.log(string)
+
+const title = "Rdhjhd hfhjf hsdfhsk";
+const preTitle = title.split(' ').join('-');
+
+console.log(preTitle)
