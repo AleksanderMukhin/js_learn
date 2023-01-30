@@ -118,12 +118,22 @@
 // console.log(friends);
 
 
-const a = [1, 2, 3];
-const b = a;
+// const a = [1, 2, 3];
+// const b = a;
 
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
 
-a[0] = 500;
-console.log('a', a);
-console.log('b', b);
+// a[0] = 500;
+// console.log('a', a);
+// console.log('b', b);
+
+const friends = ['Kiwi', 'Ajax', 'Poly', 'Paul'];
+// for (let friend of friends) {
+//   friend += '-1'
+//   console.log(friend)
+// }
+for (let i = 0; i < friends.length; i += 1) {
+  friends[i] += ' - 1';
+  console.log(friends[i]);
+}
