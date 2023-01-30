@@ -154,27 +154,45 @@
 
 
 // EVEN NUMBERS-----
-const numbers = [1, 2, 3, 8, 9, 12, 55, 78, 123, 90];
-let totalEven = 0;
+// const numbers = [1, 2, 3, 8, 11, 9, 12, 55, 78, 123, 90];
+// let totalEven = 0;
 
-//first way
-// for (let i = 0; i < numbers.length; i += 1) {
-//   console.log(numbers[i])
-//   if (numbers[i] % 2 === 0) {
-//     console.log('Even : ')
-//     totalEven += numbers[i]
-//     console.log(totalEven)
-//   }
-// }
-// console.log('Total:', totalEven);
+// //first way
+// // for (let i = 0; i < numbers.length; i += 1) {
+// //   console.log(numbers[i])
+// //   if (numbers[i] % 2 === 0) {
+// //     console.log('Even : ')
+// //     totalEven += numbers[i]
+// //     console.log(totalEven)
+// //   }
+// // }
+// // console.log('Total:', totalEven);
 
-//second way
-for (const number of numbers) {
-  console.log(number);
-   
-  if (number % 2 === 0) {
-    totalEven += number;    
-  }
+// //second way
+// for (const number of numbers) {
   
+   
+//   if (number % 2 === 0) {
+//     console.log(number);
+//     totalEven += number;    
+//   }
+  
+// }
+// console.log('total: ', totalEven);
+
+
+//task find login
+const logins = ['svsdkjkdj', 'hjdhkisdnz', 'jdjhfjhgbb', 'jhdfjhjh'];
+const loginToFind = 'hjdhkisdnz';
+let message = '';
+
+for (let i = 0; i < logins.length; i += 1) {
+  const login = logins[i];
+  // console.log(login);
+  if (login === loginToFind) {
+    message = `Login "${loginToFind}" is finded`;
+    break;
+  }
+  message = 'Login is not finded';  
 }
-console.log('total: ', totalEven);
+console.log(message);
