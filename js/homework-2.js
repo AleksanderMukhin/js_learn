@@ -139,19 +139,42 @@
 // }
 
 //------task practice-----
-const purcheses = [12, 55, 78, 123, 90];
-
-let total = 0;
-for (let i = 0; i < purcheses.length; i += 1) {
-  purcheses[i] = Math.round(purcheses[i] * 1.1);
-  
-  
-  total += purcheses[i];
-
-}
-// for (let purchese of purcheses) {
-//   console.log(purchese);
-//   total += purchese;
+// const purcheses = [12, 55, 78, 123, 90];
+// let total = 0;
+// for (let i = 0; i < purcheses.length; i += 1) {
+//   purcheses[i] = Math.round(purcheses[i] * 1.1);  
+//   total += purcheses[i];
 // }
-console.log(purcheses);
-console.log(total);
+// // for (let purchese of purcheses) {
+// //   console.log(purchese);
+// //   total += purchese;
+// // }
+// console.log(purcheses);
+// console.log(total);
+
+
+// EVEN NUMBERS-----
+const numbers = [1, 2, 3, 8, 9, 12, 55, 78, 123, 90];
+let totalEven = 0;
+
+//first way
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(numbers[i])
+//   if (numbers[i] % 2 === 0) {
+//     console.log('Even : ')
+//     totalEven += numbers[i]
+//     console.log(totalEven)
+//   }
+// }
+// console.log('Total:', totalEven);
+
+//second way
+for (const number of numbers) {
+  console.log(number);
+   
+  if (number % 2 === 0) {
+    totalEven += number;    
+  }
+  
+}
+console.log('total: ', totalEven);
