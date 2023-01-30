@@ -184,15 +184,21 @@
 //task find login
 const logins = ['svsdkjkdj', 'hjdhkisdnz', 'jdjhfjhgbb', 'jhdfjhjh'];
 const loginToFind = 'hjdhkisdnz';
-let message = '';
+let message = `Login: ${loginToFind} is not finded`;
 
-for (let i = 0; i < logins.length; i += 1) {
-  const login = logins[i];
-  // console.log(login);
+// for (let i = 0; i < logins.length; i += 1) {
+//   const login = logins[i];
+//   // console.log(login);
+//   if (login === loginToFind) {
+//     message = `Login "${loginToFind}" is finded`;
+//     break;
+//   }
+//   message = 'Login is not finded';  
+// }
+for (const login of logins) {
   if (login === loginToFind) {
-    message = `Login "${loginToFind}" is finded`;
-    break;
+    message = `Login: "${loginToFind}" is finded`;
   }
-  message = 'Login is not finded';  
 }
+
 console.log(message);
