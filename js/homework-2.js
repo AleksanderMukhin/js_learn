@@ -112,7 +112,18 @@
 // multiply(1, 2, 3);
 
 
-const friends = ['Kiwi', 'Ajax', 'Poly', 'Paul'];
-friends[1] = 'Joi';
-console.log(friends[1]);
-console.log(friends);
+// const friends = ['Kiwi', 'Ajax', 'Poly', 'Paul'];
+// friends[1] = 'Joi';
+// console.log(friends[1]);
+// console.log(friends);
+
+
+const a = [1, 2, 3];
+const b = a;
+
+console.log(a);
+console.log(b);
+
+a[0] = 500;
+console.log('a', a);
+console.log('b', b);
