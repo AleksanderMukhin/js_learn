@@ -182,23 +182,48 @@
 
 
 //task find login
-const logins = ['svsdkjkdj', 'hjdhkisdnz', 'jdjhfjhgbb', 'jhdfjhjh'];
-const loginToFind = 'hjdhkisdnz';
-let message = `Login: ${loginToFind} is not finded`;
+// const logins = ['svsdkjkdj', 'hjdhkisdnz', 'jdjhfjhgbb', 'jhdfjhjh'];
+// const loginToFind = 'hjdhkisdnz';
+// let message = `Login: ${loginToFind} is not finded`;
 
-// for (let i = 0; i < logins.length; i += 1) {
-//   const login = logins[i];
-//   // console.log(login);
-//   if (login === loginToFind) {
-//     message = `Login "${loginToFind}" is finded`;
-//     break;
+// // for (let i = 0; i < logins.length; i += 1) {
+// //   const login = logins[i];
+// //   // console.log(login);
+// //   if (login === loginToFind) {
+// //     message = `Login "${loginToFind}" is finded`;
+// //     break;
+// //   }
+// //   message = 'Login is not finded';  
+// // }
+// //----seconde way---
+// // for (const login of logins) {
+// //   if (login === loginToFind) {
+// //     message = `Login: "${loginToFind}" is finded`;
+// //   }
+// // }
+// // console.log(message);
+// //third way
+// message = logins.includes(loginToFind) ? `Login: ${loginToFind} is finded` : `Login is not find`;
+// console.log(message)
+
+
+//task min number---
+// const numbers = [12, 34, 55, 81, 22, 33];
+// let minNumber = numbers[0];
+
+// for (const number of numbers) {
+//   if (number < minNumber) {
+//     minNumber = number;
 //   }
-//   message = 'Login is not finded';  
 // }
-for (const login of logins) {
-  if (login === loginToFind) {
-    message = `Login: "${loginToFind}" is finded`;
-  }
-}
+// console.log("Min number: ", minNumber);
 
-console.log(message);
+
+const friends = ['Kiwi', 'Ajax', 'Troja', 'Ahiles'];
+let string = '';
+for (const friend of friends) {
+  string += friend + ',';
+}
+string = string.slice(0, string.length - 1);
+
+console.log(string)
