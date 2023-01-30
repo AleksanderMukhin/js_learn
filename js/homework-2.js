@@ -140,13 +140,18 @@
 
 //------task practice-----
 const purcheses = [12, 55, 78, 123, 90];
+
 let total = 0;
-// for (let i = 0; i < purcheses.length; i += 1) {
-//   console.log(purcheses[i]);
-//   total += purcheses[i];
-// }
-for (let purchese of purcheses) {
-  console.log(purchese);
-  total += purchese;
+for (let i = 0; i < purcheses.length; i += 1) {
+  purcheses[i] = Math.round(purcheses[i] * 1.1);
+  
+  
+  total += purcheses[i];
+
 }
+// for (let purchese of purcheses) {
+//   console.log(purchese);
+//   total += purchese;
+// }
+console.log(purcheses);
 console.log(total);
