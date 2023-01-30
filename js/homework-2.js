@@ -128,12 +128,25 @@
 // console.log('a', a);
 // console.log('b', b);
 
-const friends = ['Kiwi', 'Ajax', 'Poly', 'Paul'];
-// for (let friend of friends) {
-//   friend += '-1'
-//   console.log(friend)
+// const friends = ['Kiwi', 'Ajax', 'Poly', 'Paul'];
+// // for (let friend of friends) {
+// //   friend += '-1'
+// //   console.log(friend)
+// // }
+// for (let i = 0; i < friends.length; i += 1) {
+//   friends[i] += ' - 1';
+//   console.log(friends[i]);
 // }
-for (let i = 0; i < friends.length; i += 1) {
-  friends[i] += ' - 1';
-  console.log(friends[i]);
+
+//------task practice-----
+const purcheses = [12, 55, 78, 123, 90];
+let total = 0;
+// for (let i = 0; i < purcheses.length; i += 1) {
+//   console.log(purcheses[i]);
+//   total += purcheses[i];
+// }
+for (let purchese of purcheses) {
+  console.log(purchese);
+  total += purchese;
 }
+console.log(total);
