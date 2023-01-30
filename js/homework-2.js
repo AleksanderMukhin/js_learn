@@ -227,10 +227,20 @@
 // // string = string.slice(0, string.length - 1);
 
 // const string = friends.join(", ")
+// console.log(string);
+// const title = "Rdhjhd hfhjf hsdfhsk";
+// const preTitle = title.split(' ').join('-');
+// console.log(preTitle)
 
-// console.log(string)
 
-const title = "Rdhjhd hfhjf hsdfhsk";
-const preTitle = title.split(' ').join('-');
+const arrey1 = [12, 15, 18, 20];
+const arrey2 = [15, 25, 20];
+let total = 0;
 
-console.log(preTitle)
+const numbers = arrey1.concat(arrey2);
+console.log(numbers);
+
+for (const number of numbers) {
+  total += number;
+}
+console.log(total);
