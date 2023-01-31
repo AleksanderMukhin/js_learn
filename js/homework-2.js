@@ -139,17 +139,25 @@
 // }
 
 //------task practice-----
-// const purcheses = [12, 55, 78, 123, 90];
-// let total = 0;
+const purcheses = function (items) {
+  let total = 0;
+  for (const item of items) {
+    total += item;
+  }
+  return total;
+}
+console.log()
+
 // for (let i = 0; i < purcheses.length; i += 1) {
 //   purcheses[i] = Math.round(purcheses[i] * 1.1);  
 //   total += purcheses[i];
 // }
-// // for (let purchese of purcheses) {
-// //   console.log(purchese);
-// //   total += purchese;
-// // }
-// console.log(purcheses);
+// for (let purchese of purcheses) {
+//   console.log(purchese);
+//   total += purchese;
+// }
+let items = [12, 55, 78, 123, 90];
+console.log(purcheses(items));
 // console.log(total);
 
 
@@ -263,23 +271,58 @@
 
 
 //------DELETE AND DO AND RENAME CARDS------
-const cards = ['Card-1', 'Card-2', 'Card-3', 'Card-4'];
-console.table(cards);
-//--DELETE ON INDEX
-const cardToRemove = 'Card-2';
-let index = cards.indexOf(cardToRemove);
-console.log(index);
-cards.splice(index, 1);
-console.table(cards);
+// const cards = ['Card-1', 'Card-2', 'Card-3', 'Card-4'];
+// console.table(cards);
+// //--DELETE ON INDEX
+// const cardToRemove = 'Card-2';
+// let index = cards.indexOf(cardToRemove);
+// console.log(index);
+// cards.splice(index, 1);
+// console.table(cards);
 
-//-------insert card----
-const cardToInsert = 'Card-6';
-cards.splice(index, 0, cardToInsert);
-console.table(cards);
+// //-------insert card----
+// const cardToInsert = 'Card-6';
+// cards.splice(index, 0, cardToInsert);
+// console.table(cards);
 
-//------- update card---
-const cardToUpdate = 'Card-4';
-index = cards.indexOf(cardToUpdate);
-console.log(index);
-cards.splice(index, 1, 'New card-4');
-console.table(cards)
+// //------- update card---
+// const cardToUpdate = 'Card-4';
+// index = cards.indexOf(cardToUpdate);
+// console.log(index);
+// cards.splice(index, 1, 'New card-4');
+// console.table(cards);
+
+
+// const add = function (x, y) {
+//   console.log('Show the function');
+//   return x + y;
+// }
+// console.log(add(1, 5));
+
+
+//--------HOMEWORK MODULE 2-----
+//TASK--1
+function checkAge(age) {
+
+  if (age >= 18) { // Change this line
+    return "You are an adult";
+  }
+
+  return "You are a minor";
+}
+checkAge(20);
+
+
+//task--2
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  // Change code below this line
+  if (password === ADMIN_PASSWORD) {
+    
+    return "Welcome!";
+  }  
+
+  return "Access denied, wrong password!";
+  // Change code above this line
+}
+console.log(checkPassword("mangohackzor"))
