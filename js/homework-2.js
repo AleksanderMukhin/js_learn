@@ -246,16 +246,40 @@
 // console.log(total);
 
 
-function multiply() {
-  let total = 1;
+// function multiply() {
+//   let total = 1;
 
-  for (const argument of arguments) {
-    total *= argument;
-  }
+//   for (const argument of arguments) {
+//     total *= argument;
+//   }
 
-  return total;
-}
+//   return total;
+// }
 
-console.log(multiply(1, 2, 3)); //  6
-console.log(multiply(1, 2, 3, 4)); //  24
-console.log(multiply(1, 2, 3, 4, 5));
+// console.log(multiply(1, 2, 3)); //  6
+// console.log(multiply(1, 2, 3, 4)); //  24
+// console.log(multiply(1, 2, 3, 4, 5));
+
+
+
+//------DELETE AND DO AND RENAME CARDS------
+const cards = ['Card-1', 'Card-2', 'Card-3', 'Card-4'];
+console.table(cards);
+//--DELETE ON INDEX
+const cardToRemove = 'Card-2';
+let index = cards.indexOf(cardToRemove);
+console.log(index);
+cards.splice(index, 1);
+console.table(cards);
+
+//-------insert card----
+const cardToInsert = 'Card-6';
+cards.splice(index, 0, cardToInsert);
+console.table(cards);
+
+//------- update card---
+const cardToUpdate = 'Card-4';
+index = cards.indexOf(cardToUpdate);
+console.log(index);
+cards.splice(index, 1, 'New card-4');
+console.table(cards)
