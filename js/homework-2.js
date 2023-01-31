@@ -233,14 +233,29 @@
 // console.log(preTitle)
 
 
-const arrey1 = [12, 15, 18, 20];
-const arrey2 = [15, 25, 20];
-let total = 0;
+// const arrey1 = [12, 15, 18, 20];
+// const arrey2 = [15, 25, 20];
+// let total = 0;
 
-const numbers = arrey1.concat(arrey2);
-console.log(numbers);
+// const numbers = arrey1.concat(arrey2);
+// console.log(numbers);
 
-for (const number of numbers) {
-  total += number;
+// for (const number of numbers) {
+//   total += number;
+// }
+// console.log(total);
+
+
+function multiply() {
+  let total = 1;
+
+  for (const argument of arguments) {
+    total *= argument;
+  }
+
+  return total;
 }
-console.log(total);
+
+console.log(multiply(1, 2, 3)); //  6
+console.log(multiply(1, 2, 3, 4)); //  24
+console.log(multiply(1, 2, 3, 4, 5));
