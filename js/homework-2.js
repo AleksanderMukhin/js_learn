@@ -139,14 +139,14 @@
 // }
 
 //------task practice-----
-const purcheses = function (items) {
-  let total = 0;
-  for (const item of items) {
-    total += item;
-  }
-  return total;
-}
-console.log()
+// const purcheses = function (items) {
+//   let total = 0;
+//   for (const item of items) {
+//     total += item;
+//   }
+//   return total;
+// }
+// console.log()
 
 // for (let i = 0; i < purcheses.length; i += 1) {
 //   purcheses[i] = Math.round(purcheses[i] * 1.1);  
@@ -156,8 +156,8 @@ console.log()
 //   console.log(purchese);
 //   total += purchese;
 // }
-let items = [12, 55, 78, 123, 90];
-console.log(purcheses(items));
+// let items = [12, 55, 78, 123, 90];
+// console.log(purcheses(items));
 // console.log(total);
 
 
@@ -366,28 +366,63 @@ console.log(purcheses(items));
 // fruits[3] = "banana";
 
 
-//---task 7----
-const fruits = ["apple", "peach", "pear", "banana"];
+// //---task 7----
+// const fruits = ["apple", "peach", "pear", "banana"];
 
-// Change code below this line
-const fruitsArrayLength = fruits.length;
-
-
-//------task 8----
-const fruits = ["apple", "peach", "pear", "banana"];
-// Change code below this line
-const lastElementIndex = fruits.length - 1;
-const lastElement = fruits[lastElementIndex];
+// // Change code below this line
+// const fruitsArrayLength = fruits.length;
 
 
-//------task 9-----
-function getExtremeElements(array) {
-  // Change code below this line
+// //------task 8----
+// const fruits = ["apple", "peach", "pear", "banana"];
+// // Change code below this line
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[lastElementIndex];
+
+
+// //------task 9-----
+// function getExtremeElements(array) {
+//   // Change code below this line
   
-return [array[0], array[array.length - 1]];
-  // Change code above this line
-}
-getExtremeElements([1, 2, 3, 4, 5]);
+// return [array[0], array[array.length - 1]];
+//   // Change code above this line
+// }
+// getExtremeElements([1, 2, 3, 4, 5]);
 
 
 //------task 10----
+function splitMessage(message, delimiter) {
+  let words;
+  // Change code below this line
+  return words = message.split(delimiter);
+  // Change code above this line
+  
+}
+splitMessage("Mango hurries to the train", " ")
+console.log(splitMessage("Mango hurries to the train", " "));
+console.log(splitMessage("Mango", ""));
+console.log(splitMessage("best_for_week", "_"));
+
+
+//----task 11----
+function calculateEngravingPrice(message, pricePerWord) {
+   // Change code below this line
+// const price =  message.split(' ').length * pricePerWord;
+
+  return message.split(' ').length * pricePerWord;;
+   // Change code above this line
+}
+console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+
+
+//-----task 12------
+function makeStringFromArray(array, delimiter) {
+  let string;
+  // Change code below this line
+string = array.join(delimiter);
+  // Change code above this line
+  return string;
+}
+console.log(makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " "));
+
+console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
