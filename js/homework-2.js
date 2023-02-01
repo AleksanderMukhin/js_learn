@@ -301,66 +301,93 @@ console.log(purcheses(items));
 
 
 //--------HOMEWORK MODULE 2-----
-//TASK--1
-function checkAge(age) {
+// //TASK--1
+// function checkAge(age) {
 
-  if (age >= 18) { // Change this line
-    return "You are an adult";
-  }
+//   if (age >= 18) { // Change this line
+//     return "You are an adult";
+//   }
 
-  return "You are a minor";
-}
-checkAge(20);
+//   return "You are a minor";
+// }
+// checkAge(20);
 
 
-//task--2
-function checkPassword(password) {
-  const ADMIN_PASSWORD = "jqueryismyjam";
-  // Change code below this line
-  if (password === ADMIN_PASSWORD) {
+// //task--2
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   // Change code below this line
+//   if (password === ADMIN_PASSWORD) {
     
-    return "Welcome!";
-  }  
+//     return "Welcome!";
+//   }  
 
-  return "Access denied, wrong password!";
-  // Change code above this line
-}
-console.log(checkPassword("mangohackzor"));
-
-
-//-------task 3------
-function checkStorage(available, ordered) {
-  // Change code below this line
-  if (ordered === 0) {
-    return "Your order is empty!";
-  } 
-  if (ordered > available) {
-    return "Your order is too large, not enough goods in stock!";
-  }
-    return "The order is accepted, our manager will contact you";
-  // Change code above this line
-}
-console.log(checkStorage(100, 50));
+//   return "Access denied, wrong password!";
+//   // Change code above this line
+// }
+// console.log(checkPassword("mangohackzor"));
 
 
-//-----task 4----
-// Change code below this line
-// const fruits = ['apple', 'plum', 'pear', 'orange'];
+// //-------task 3------
+// function checkStorage(available, ordered) {
+//   // Change code below this line
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   } 
+//   if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   }
+//     return "The order is accepted, our manager will contact you";
+//   // Change code above this line
+// }
+// console.log(checkStorage(100, 50));
+
+
+// //-----task 4----
+// // Change code below this line
+// // const fruits = ['apple', 'plum', 'pear', 'orange'];
 
 
 
-//------task 5----
-const fruits = ["apple", "plum", "pear", "orange"];
-
-// Change code below this line
-const firstElement = fruits[0];
-const secondElement = fruits[1];
-const lastElement = fruits[3];
-
-
-//------task 6-----
+// //------task 5----
 // const fruits = ["apple", "plum", "pear", "orange"];
 
-// Write your code under this line
-fruits[1] = "peach";
-fruits[3] = "banana";
+// // Change code below this line
+// const firstElement = fruits[0];
+// const secondElement = fruits[1];
+// const lastElement = fruits[3];
+
+
+// //------task 6-----
+// // const fruits = ["apple", "plum", "pear", "orange"];
+
+// // Write your code under this line
+// fruits[1] = "peach";
+// fruits[3] = "banana";
+
+
+//---task 7----
+const fruits = ["apple", "peach", "pear", "banana"];
+
+// Change code below this line
+const fruitsArrayLength = fruits.length;
+
+
+//------task 8----
+const fruits = ["apple", "peach", "pear", "banana"];
+// Change code below this line
+const lastElementIndex = fruits.length - 1;
+const lastElement = fruits[lastElementIndex];
+
+
+//------task 9-----
+function getExtremeElements(array) {
+  // Change code below this line
+  
+return [array[0], array[array.length - 1]];
+  // Change code above this line
+}
+getExtremeElements([1, 2, 3, 4, 5]);
+
+
+//------task 10----
