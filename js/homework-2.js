@@ -341,3 +341,26 @@ function checkStorage(available, ordered) {
   // Change code above this line
 }
 console.log(checkStorage(100, 50));
+
+
+//-----task 4----
+// Change code below this line
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+
+
+//------task 5----
+const fruits = ["apple", "plum", "pear", "orange"];
+
+// Change code below this line
+const firstElement = fruits[0];
+const secondElement = fruits[1];
+const lastElement = fruits[3];
+
+
+//------task 6-----
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// Write your code under this line
+fruits[1] = "peach";
+fruits[3] = "banana";
