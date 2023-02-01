@@ -391,38 +391,66 @@
 
 
 //------task 10----
-function splitMessage(message, delimiter) {
-  let words;
-  // Change code below this line
-  return words = message.split(delimiter);
-  // Change code above this line
+// function splitMessage(message, delimiter) {
+//   let words;
+//   // Change code below this line
+//   return words = message.split(delimiter);
+//   // Change code above this line
   
-}
-splitMessage("Mango hurries to the train", " ")
-console.log(splitMessage("Mango hurries to the train", " "));
-console.log(splitMessage("Mango", ""));
-console.log(splitMessage("best_for_week", "_"));
+// }
+// splitMessage("Mango hurries to the train", " ")
+// console.log(splitMessage("Mango hurries to the train", " "));
+// console.log(splitMessage("Mango", ""));
+// console.log(splitMessage("best_for_week", "_"));
 
 
-//----task 11----
-function calculateEngravingPrice(message, pricePerWord) {
-   // Change code below this line
-// const price =  message.split(' ').length * pricePerWord;
+// //----task 11----
+// function calculateEngravingPrice(message, pricePerWord) {
+//    // Change code below this line
+// // const price =  message.split(' ').length * pricePerWord;
 
-  return message.split(' ').length * pricePerWord;;
-   // Change code above this line
-}
-console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+//   return message.split(' ').length * pricePerWord;;
+//    // Change code above this line
+// }
+// console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
 
 
-//-----task 12------
-function makeStringFromArray(array, delimiter) {
-  let string;
+// //-----task 12------
+// function makeStringFromArray(array, delimiter) {
+//   let string;
+//   // Change code below this line
+// string = array.join(delimiter);
+//   // Change code above this line
+//   return string;
+// }
+// console.log(makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " "));
+
+// console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
+
+
+//------task 13-----
+function slugify(title) {
   // Change code below this line
-string = array.join(delimiter);
-  // Change code above this line
-  return string;
-}
-console.log(makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " "));
 
-console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
+  return title.split(' ').join('-').toLowerCase();
+
+  // Change code above this line
+}
+console.log(slugify("Arrays for begginers"));
+
+
+//-----task 14 -------
+const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// Change code below this line
+const firstTwoEls = fruits.slice(0, 2);
+const nonExtremeEls = fruits.slice(1, 4);
+const lastThreeEls = fruits.slice(-3);
+console.log(firstTwoEls);
+console.log(lastThreeEls);
+
+//-----task 15----
+const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+const newClients = ['Peach', 'Houston'];
+
+const allClients = oldClients.concat(newClients); // Change this line
