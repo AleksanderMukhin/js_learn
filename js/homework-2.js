@@ -429,28 +429,63 @@
 
 
 //------task 13-----
-function slugify(title) {
-  // Change code below this line
+// function slugify(title) {
+//   // Change code below this line
 
-  return title.split(' ').join('-').toLowerCase();
+//   return title.split(' ').join('-').toLowerCase();
 
+//   // Change code above this line
+// }
+// console.log(slugify("Arrays for begginers"));
+
+
+// //-----task 14 -------
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, 4);
+// const lastThreeEls = fruits.slice(-3);
+// console.log(firstTwoEls);
+// console.log(lastThreeEls);
+
+// //-----task 15----
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients); // Change this line
+
+
+//-----task 16----
+function makeArray(firstArray, secondArray, maxLength) {
+    // Change code below this line
+  
+  return firstArray.concat(secondArray).slice(0, maxLength);
+
+
+    // Change code above this line
+  }
+
+console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4));
+
+
+//---task 17----
+const start = 3;
+const end = 7;
+
+for (let i = start; i <= end; i += 1) { // Change this line
+  console.log(i);
+}
+
+
+//----task 18----
+function calculateTotal(number) {
+ // Change code below this line
+  let total = 0;
+  for (let i = 0; i < number; i += 1) {
+  return total += number;
+}
   // Change code above this line
 }
-console.log(slugify("Arrays for begginers"));
-
-
-//-----task 14 -------
-const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
-
-// Change code below this line
-const firstTwoEls = fruits.slice(0, 2);
-const nonExtremeEls = fruits.slice(1, 4);
-const lastThreeEls = fruits.slice(-3);
-console.log(firstTwoEls);
-console.log(lastThreeEls);
-
-//-----task 15----
-const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
-const newClients = ['Peach', 'Houston'];
-
-const allClients = oldClients.concat(newClients); // Change this line
+console.log(calculateTotal(6));
+calculateTotal(3);
