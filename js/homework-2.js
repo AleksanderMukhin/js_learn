@@ -479,38 +479,79 @@
 
 
 //----task 18----
-function calculateTotal(number) {
- // Change code below this line
-  let total = 0;
-  for (let i = 0; i <= number; i += 1) {
-    total += i;
+// function calculateTotal(number) {
+//  // Change code below this line
+//   let total = 0;
+//   for (let i = 0; i <= number; i += 1) {
+//     total += i;
     
-  }
-  return total;
+//   }
+//   return total;
   
+//   // Change code above this line
+// }
+// console.log(calculateTotal(3));
+// calculateTotal(3);
+
+
+// //-----task 19----
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) { // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+
+// //----task 20-----
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+// for(let item of order) {
+//   total += item;
+// }
+//   // Change code above this line
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+
+//----task 21---
+//----way 1----
+// function findLongestWord(string) {
+//   // Change code below this line
+// return string.split(' ').reduce((a, b) => 
+// (b.length > a.length) ? b : a);    
+// }
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
   // Change code above this line
-}
-console.log(calculateTotal(3));
-calculateTotal(3);
+//----way 2----
+// function findLongestWord(string) {
+//   // Change code below this line
+//   const array = string.split(" ");
+//   let longer = array[0];
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i].length > longer.length) {
+//       longer = array[i]
+//     }
+//   }
+//   return longer;
+
+//   // Change code above this line
+// }
+
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 
 
-//-----task 19----
-const fruits = ['apple', 'plum', 'pear', 'orange'];
-
-for (let i = 0; i < fruits.length; i += 1) { // Change this line
-  const fruit = fruits[i]; // Change this line
-  console.log(fruit);
-}
-
-
-//----task 20-----
-function calculateTotalPrice(order) {
-  let total = 0;
-  // Change code below this line
-for(let item of order) {
-  total += item;
-}
-  // Change code above this line
-  return total;
-}
-console.log(calculateTotalPrice([12, 85, 37, 4]));
+//----task 22----
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+// for(let i = min; i <= max; i += 1) {
+//   numbers.push(i);
+// }
+  
+//   // Change code above this line
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(1, 3))
