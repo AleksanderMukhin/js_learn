@@ -555,3 +555,59 @@
 //   return numbers;
 // }
 // console.log(createArrayOfNumbers(1, 3))
+
+
+//----task 23----
+function filterArray(numbers, value) {
+   // Change code below this line
+  const bigNumbers = [];
+  for (let number of numbers) {
+    if (number > value) {
+      bigNumbers.push(number)
+    }     
+  }
+return bigNumbers;
+  // Change code above this line
+}
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+console.log(filterArray([12, 24, 8, 41, 76], 38));
+
+
+//-----task 24-----
+function checkFruit(fruit) {
+  const fruits = ["apple", "plum", "pear", "orange"];
+
+  return fruits.includes(fruit); // Change this line
+}
+
+
+//-----task 25-----
+function getCommonElements(array1, array2) {
+  // Change code below this line
+  const result = [];
+  for (let element of array1) {
+    if (array2.includes(element)) {
+      result.push(element)
+    }
+  }
+  return result;
+
+
+ // Change code above this line
+}
+console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+
+
+//-----task 26------
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+
+  for (const i of order) {
+    total += i;
+  }
+
+  // Change code above this line
+  return total;
+}
+console.log(calculateTotalPrice([12, 85, 37, 4]));
