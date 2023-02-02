@@ -457,35 +457,60 @@
 
 
 //-----task 16----
-function makeArray(firstArray, secondArray, maxLength) {
-    // Change code below this line
+// function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
   
-  return firstArray.concat(secondArray).slice(0, maxLength);
+//   return firstArray.concat(secondArray).slice(0, maxLength);
 
 
-    // Change code above this line
-  }
+//     // Change code above this line
+//   }
 
-console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4));
+// console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4));
 
 
-//---task 17----
-const start = 3;
-const end = 7;
+// //---task 17----
+// const start = 3;
+// const end = 7;
 
-for (let i = start; i <= end; i += 1) { // Change this line
-  console.log(i);
-}
+// for (let i = start; i <= end; i += 1) { // Change this line
+//   console.log(i);
+// }
 
 
 //----task 18----
 function calculateTotal(number) {
  // Change code below this line
   let total = 0;
-  for (let i = 0; i < number; i += 1) {
-  return total += number;
-}
+  for (let i = 0; i <= number; i += 1) {
+    total += i;
+    
+  }
+  return total;
+  
   // Change code above this line
 }
-console.log(calculateTotal(6));
+console.log(calculateTotal(3));
 calculateTotal(3);
+
+
+//-----task 19----
+const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+for (let i = 0; i < fruits.length; i += 1) { // Change this line
+  const fruit = fruits[i]; // Change this line
+  console.log(fruit);
+}
+
+
+//----task 20-----
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+for(let item of order) {
+  total += item;
+}
+  // Change code above this line
+  return total;
+}
+console.log(calculateTotalPrice([12, 85, 37, 4]));
