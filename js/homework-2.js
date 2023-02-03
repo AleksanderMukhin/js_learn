@@ -558,56 +558,136 @@
 
 
 //----task 23----
-function filterArray(numbers, value) {
-   // Change code below this line
-  const bigNumbers = [];
-  for (let number of numbers) {
-    if (number > value) {
-      bigNumbers.push(number)
-    }     
-  }
-return bigNumbers;
-  // Change code above this line
-}
-// console.log(filterArray([1, 2, 3, 4, 5], 3));
-console.log(filterArray([12, 24, 8, 41, 76], 38));
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//   const bigNumbers = [];
+//   for (let number of numbers) {
+//     if (number > value) {
+//       bigNumbers.push(number)
+//     }     
+//   }
+// return bigNumbers;
+//   // Change code above this line
+// }
+// // console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
 
 
-//-----task 24-----
-function checkFruit(fruit) {
-  const fruits = ["apple", "plum", "pear", "orange"];
+// //-----task 24-----
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
 
-  return fruits.includes(fruit); // Change this line
-}
-
-
-//-----task 25-----
-function getCommonElements(array1, array2) {
-  // Change code below this line
-  const result = [];
-  for (let element of array1) {
-    if (array2.includes(element)) {
-      result.push(element)
-    }
-  }
-  return result;
+//   return fruits.includes(fruit); // Change this line
+// }
 
 
- // Change code above this line
-}
-console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// //-----task 25-----
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   const result = [];
+//   for (let element of array1) {
+//     if (array2.includes(element)) {
+//       result.push(element)
+//     }
+//   }
+//   return result;
 
 
-//-----task 26------
-function calculateTotalPrice(order) {
-  let total = 0;
-  // Change code below this line
+//  // Change code above this line
+// }
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
 
-  for (const i of order) {
-    total += i;
-  }
 
-  // Change code above this line
-  return total;
-}
-console.log(calculateTotalPrice([12, 85, 37, 4]));
+// //-----task 26------
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (const i of order) {
+//     total += i;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+
+// //----task 27----
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (let i of numbers) {
+//     const number = i;
+
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+
+
+// //-----task 29------
+// function getEvenNumbers(start, end) {
+//    // Change code below this line
+//   const number = [];
+//   for(let i = start; i <= end; i += 1) {
+//     if(i % 2 === 0) {      
+//       number.push(i)
+//     }    
+//   }
+// return number;
+
+//     // Change code above this line
+//   }
+// console.log(getEvenNumbers(3, 11));
+
+
+// //------task 30-----
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+
+
+// //-----task 31---
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+      
+//     }
+//   }
+//   return number;
+//   // Change code above this line
+// }
+
+
+// //-----task 32-----
+// function includes(array, value) {
+//   // Change code below this line
+// for(let word of array) {
+//   if (word === value) {
+//     return true;
+//   }
+// }
+//   return false;
+//   // Change code above this line
+// }
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(includes([1, 2, 3, 4, 5], 17))
