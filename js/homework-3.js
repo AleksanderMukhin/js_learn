@@ -121,65 +121,151 @@
 // console.log(largest);
 
 
-const cart = {
-  items: [],
-  getItems() {
-    return this.items;
-  },
-  add(product) {
+
+//--------TASK REPETA-------
+// const cart = {
+//   items: [],
+//   getItems() {
+//     return this.items;
+//   },
+//   add(product) {
     
-    console.table(this.items);
-    for (const item of this.items) {
-      if (item.name === product.name) {
-        item.quantity += 1;
-        return
-      }
-    }
+//     console.table(this.items);
+//     for (const item of this.items) {
+//       if (item.name === product.name) {
+//         item.quantity += 1;
+//         return
+//       }
+//     }
 
-    const newProduct = {
-      ...product,
-      quantity: 1,
-    };
-    this.items.push(newProduct);
-  },
-  remove(productName) {
-    const { items } = this;
-    for (let i = 0; i < items.length; i++) {
-      const item = items[i];
+//     const newProduct = {
+//       ...product,
+//       quantity: 1,
+//     };
+//     this.items.push(newProduct);
+//   },
+//   remove(productName) {
+//     const { items } = this;
+//     for (let i = 0; i < items.length; i++) {
+//       const item = items[i];
 
-      if (productName === item.name) {
-        console.log(i);
+//       if (productName === item.name) {
+//         console.log(i);
 
-        items.splice(i, 1);
-      }
-    }
-  },
-  clear() {
-    this.items = [];
-  },
-  countTotalPrice() {
-    let total = 0;
-    const { items } = this;
-    for (const {price} of items) {
-      total += price
-    }
-    return console.log(total);
-  },
-}
+//         items.splice(i, 1);
+//       }
+//     }
+//   },
+//   clear() {
+//     this.items = [];
+//   },
+//   countTotalPrice() {
+//     let total = 0;
+//     const { items } = this;
+//     for (const {price, quantity} of items) {
+//       total += price * quantity;
+//     }
+//     return console.log(total);
+//   },
+// }
 
-// console.log(cart.getItems());
-cart.add({ name: 'apple', price: 60 });
-cart.add({ name: 'Limon', price: 160 });
-cart.add({ name: 'Frais', price: 30 });
-cart.add({ name: 'Limon', price: 160 });
-console.table(cart.getItems());
-
-// cart.remove('Frais');
+// // console.log(cart.getItems());
+// cart.add({ name: 'apple', price: 60 });
+// cart.add({ name: 'Limon', price: 160 });
+// cart.add({ name: 'Frais', price: 30 });
+// cart.add({ name: 'Limon', price: 160 });
+// cart.add({ name: 'Frais', price: 30 });
+// cart.add({ name: 'Frais', price: 30 });
 // console.table(cart.getItems());
+
+// // cart.remove('Frais');
+// // console.table(cart.getItems());
 
 // cart.countTotalPrice();
 // console.table(cart.getItems());
 
 // cart.clear();
 // console.table(cart.getItems());
+//------- END REPETA-------
 
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+
+// for (const key in book) {
+//   // Ключ
+//   // console.log(key);
+//   // Значение свойства с таким ключом
+//   console.log(book[key]);
+// }
+
+//-------task 10----
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+  
+// };
+// const keys = [];
+// const values = [];
+// // Change code below this line
+// for(const key in apartment) {
+//   keys.push(key);
+//   values.push(apartment[key]);
+// }
+// console.log(keys);
+// console.log(values);
+
+
+//-----task 11-----
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+
+// for (const key in apartment) {
+//   // Change code below this line
+// if(apartment.hasOwnProperty(key)) {
+//     keys.push(key);
+//   values.push(apartment[key]);
+// }
+//   // Change code above this line
+// }
+
+
+//-----task 12------
+// function countProps(object) {
+//   let propCount = 0;
+//   for (const prop in object) {
+//     if (object.hasOwnProperty(prop)) {
+//       propCount += 1;
+//     }
+//   }
+//   return propCount;
+// }
+
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })); // Output: 3
+
+
+//-----task 13-----
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+const values = [];
+// Change code below this line
+const keys = Object.keys(apartment);
+for( let key of keys ) {
+  values.push(apartment[key])
+}
+console.log(keys)
+console.log(values)
