@@ -256,16 +256,36 @@
 
 
 //-----task 13-----
-const apartment = {
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-};
-const values = [];
-// Change code below this line
-const keys = Object.keys(apartment);
-for( let key of keys ) {
-  values.push(apartment[key])
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// const values = [];
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// for( let key of keys ) {
+//   values.push(apartment[key])
+// }
+// console.log(keys)
+// console.log(values);
+
+
+//-----task 14----
+function countProps(object) {
+  // Change code below this line
+  let propCount = 0;
+let keys = Object.keys(object)
+  for (const key of keys) {
+      propCount += 1;
+    
+  }
+
+  return propCount;
+  // Change code above this line
 }
-console.log(keys)
-console.log(values)
+
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+
+
+//-----task 15-----
