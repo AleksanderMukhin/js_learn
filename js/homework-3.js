@@ -272,20 +272,95 @@
 
 
 //-----task 14----
-function countProps(object) {
-  // Change code below this line
-  let propCount = 0;
-let keys = Object.keys(object)
-  for (const key of keys) {
-      propCount += 1;
+// function countProps(object) {
+//   // Change code below this line
+//   let propCount = 0;
+// let keys = Object.keys(object)
+//   for (const key of keys) {
+//       propCount += 1;
     
-  }
+//   }
 
-  return propCount;
-  // Change code above this line
-}
+//   return propCount;
+//   // Change code above this line
+// }
 
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
 
 
 //-----task 15-----
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+
+//------task 16------
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+// const employee = Object.keys(salaries);
+//   const salarys = Object.values(salaries);
+//   for(let salary of salarys) {
+//     totalSalary += salary;
+//   }
+//   // Change code above this line
+//   return totalSalary;
+// }
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+// ];
+
+// for (const book of books) {
+//   // Объект книги
+//   console.log(book);
+//   // Название
+//   console.log(book.title);
+  // Автор
+  // console.log(book.author);
+  // Рейтинг
+  // console.log(book.rating);
+// }
+
+
+//----task17-----
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for(const color of colors) {
+//   rgbColors.push(color.rgb);
+//   hexColors.push(color.hex);
+// }
+// console.log(hexColors);
+// console.log(rgbColors);
+
+
+//----task 18----
