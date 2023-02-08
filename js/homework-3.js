@@ -541,3 +541,93 @@
 
 
 //----task 31----
+// function add(...args) {
+//   let total = 0;
+//   for (let arg of args) {
+//     total += arg;
+//   }
+//   return total;
+// }
+// console.log(add(12, 4, 11, 48));
+
+
+//-----task 33-----
+// Change code below this line
+// function findMatches(arrey1, ...arrey2) {
+//   const matches = []; // Don't change this line
+// for(let arrey of arrey1) {
+
+//   if (arrey2.includes(arrey)) {
+    
+//     matches.push(arrey)
+//   }
+// }
+//   // Change code above this line
+//   return matches;
+// }
+// console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+
+
+//-----task 34-----
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   }
+//   // Change code above this line
+// };
+// console.log(bookShelf.addBook("Haze"));
+// console.log(bookShelf.removeBook("Red sunset"));
+
+
+//------task 35-----
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     const index = this.books.indexOf(oldName);
+//     return this.books.splice(index, 1, newName)
+
+
+//     // Change code above this line
+//   },
+// };
+// console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+// console.log(bookShelf.books);
+
+
+//-------task 37------
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   // Change code below this line
+// getPotions() {
+//   return this.potions;
+// }
+//   // Change code above this line
+// };
+// console.log(atTheOldToad.getPotions());
+
+
+//-----task 38-----
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  addPotion(potionName) {
+    // Change code below this line
+return this.potions.splice(this.potions.length, 0, potionName);
+
+
+    // Change code above this line
+  },
+};
+console.log(atTheOldToad.addPotion("Invisibility"));
+console.log(atTheOldToad.potions)
