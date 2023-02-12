@@ -120,3 +120,118 @@
 
 // console.log(add(5, 10, 15));
 // console.log(addArrow(6, 11, 16));
+//--------------------------------------------------
+
+
+// const add = (...args) => {
+//   console.log(args);
+// };
+
+// add( 1, 2, 3, 4, 5, 5);
+// const greet = (name) => console.log(`Добро пожаловать ${name}.`);
+
+
+// // Функция высшего порядка
+// const registerGuest = (name, callback) => {
+//   console.log(`Регистрируем гостя ${name}.`);
+//   callback(name);
+// }
+
+// registerGuest("Mango", greet);
+
+
+//-------task 2-----
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// // Chande code below this line
+// function makeMessage(pizzaName, callback) {
+//   return callback(pizzaName);
+// }
+// console.log(makeMessage("Royal Grand", deliverPizza));
+
+
+
+//---------- Task 3-------
+// function makePizza(pizzaName, callback) {
+//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//   callback(pizzaName);
+// }
+
+// makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+// // Change code below this line
+
+// makePizza("Ultracheese", function deliverPizza(pizzaName) {
+//   console.log(`Delivering pizza ${pizzaName}.`);
+// });
+
+
+//--------task 4----------
+// const pizzaPalace = {
+//   pizzas: ['Ultracheese', 'Smoked', 'Four meats'],
+//   order(pizzaName, onSuccess, onError) {
+//     if (!this.pizzas.includes(pizzaName)) {
+//       return onError(pizzaName);
+      
+//     }
+    
+//   return onSuccess(pizzaName);
+//   },
+// };
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! There is no pizza with a name ${error} in the assortment.`;
+// }
+
+// // Method calls with callbacks
+// console.log(pizzaPalace.order('Smoked', makePizza, onOrderError));
+// console.log(pizzaPalace.order('Big Mike', makePizza, onOrderError))
+
+
+//--------task 5---------
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+
+//   orderedItems.forEach(function (item) {
+//     totalPrice += item;
+//   })
+
+//   // Change code above this line
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+
+//---------task 6----------
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   })
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+
