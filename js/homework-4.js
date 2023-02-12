@@ -235,3 +235,19 @@
 // console.log(filterArray([1, 2, 3, 4, 5], 3));
 
 
+//---------task 7----------
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+
+//   firstArray.forEach((number) => {
+//     if (secondArray.includes(number)) {
+//       commonElements.push(number);
+//     }
+//   }) 
+
+//   return commonElements;
+//   // Change code above this line
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+
