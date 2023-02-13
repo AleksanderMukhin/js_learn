@@ -251,3 +251,45 @@
 // }
 // console.log(getCommonElements([1, 2, 3], [2, 4]));
 
+
+
+//--------task map-------
+// const students = [
+//   { name: "Манго", score: 83 },
+//   { name: "Поли", score: 59 },
+//   { name: "Аякс", score: 37 },
+//   { name: "Киви", score: 94 },
+//   { name: "Хьюстон", score: 64 },
+// ];
+
+// const names = students.map((student) => {
+//   return {
+//     ...student,
+//     score: student.score * 1.2
+//   }
+// });
+// console.log(names);
+
+// const toUpdatedStudent = 'Киви';
+
+//--------way 1--------
+// const updatedStudents = students.map(student => {
+//   if (student.name === toUpdatedStudent) {
+//     return {
+//       ...student, score: student.score + 100
+//     }
+//   }
+//   return student;
+// });
+
+//------way 2------
+// const updatedStudents = students.map(student =>
+//   student.name === toUpdatedStudent
+//     ? {...student, score: student.score + 100,}
+//     : student,  
+// );
+
+// console.log(updatedStudents);
+//-------------------------------------------
+
+
