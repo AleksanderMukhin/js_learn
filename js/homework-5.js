@@ -141,23 +141,52 @@
 
 
 
-const Car = function ({ brand, model, price } = {}) {
+// const Car = function ({ brand, model, price } = {}) {
    
-  this.brand = brand;
-  this.model = model;
-  this.price = price;
+//   this.brand = brand;
+//   this.model = model;
+//   this.price = price;
 
   
-};
-console.log(Car.prototype);
+// };
+// console.log(Car.prototype);
 
 
-const myCar = new Car({
-  brand: 'audi',
-  model: 'Q3',
-  price: '20000',
-});
-console.log(myCar);
+// const myCar = new Car({
+//   brand: 'audi',
+//   model: 'Q3',
+//   price: '20000',
+// });
+// console.log(myCar);
 
-const yourCar = new Car(25);
-console.log(yourCar)
+// const yourCar = new Car(25);
+// console.log(yourCar);
+
+
+//----------task 10----------------
+class Storage {
+  constructor(items) {
+    this.items = items;
+  }
+  getItems(){
+    return this.items;
+  }
+
+  addItem(newItem) {
+    this.items.push(newItem);
+  }
+
+  removeItem(itemToRemove) {
+    const index = this.items.indexOf(itemToRemove);
+    return this.items.splice(index, 1)
+  }
+}
+
+
+// Change code above this line
+const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+storage.addItem("Droid");
+console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+storage.removeItem("Prolonger");
+console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
