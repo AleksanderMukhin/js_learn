@@ -164,29 +164,87 @@
 
 
 //----------task 10----------------
-class Storage {
-  constructor(items) {
-    this.items = items;
-  }
-  getItems(){
-    return this.items;
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
+//   getItems(){
+//     return this.items;
+//   }
+
+//   addItem(newItem) {
+//     this.items.push(newItem);
+//   }
+
+//   removeItem(itemToRemove) {
+//     const index = this.items.indexOf(itemToRemove);
+//     return this.items.splice(index, 1)
+//   }
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+
+//-------task 11----------
+// class StringBuilder {
+//   constructor(initialValue) {
+//     this.value = initialValue;
+//   }
+
+//   getValue() {
+//     return this.value;
+//   }
+
+//   padStart(str) {
+//     return this.value = str +this.value;
+//   }
+
+//   padEnd(str) {
+//     return this.value = this.value +str;
+//   }  
+
+//   padBoth(str) {
+//     return this.value = str + this.value + str;
+//   }
+// }
+
+
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+
+
+
+//-------task 12-------------
+class Car {
+  // Change code below this line
+#brand;
+  constructor({ brand, model, price }) {
+    this.#brand = brand;
+    this.model = model;
+    this.price = price;
   }
 
-  addItem(newItem) {
-    this.items.push(newItem);
+  getBrand(){
+    return this.#brand;
   }
 
-  removeItem(itemToRemove) {
-    const index = this.items.indexOf(itemToRemove);
-    return this.items.splice(index, 1)
+  changeBrand(newBrand) {
+    this.#brand = newBrand;
   }
+  // Change code above this line
 }
 
-
-// Change code above this line
-const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
-storage.addItem("Droid");
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-storage.removeItem("Prolonger");
-console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+console.log(new Car({ brand: "Audi", model: "Q3", price: 36000 }))
