@@ -18,14 +18,131 @@
   </head>
   <body>
     <a href="" class="nav_logo"
-      >Main page</a
-    >
+      >Main page
+    </a>
+
     <button
       class="magic_btn"
       type="button"
     >
       Make magic
     </button>
+
+    <button
+      class="js-target_btn"
+      type="button"
+    >
+      Target
+    </button>
+
+    <button
+      class="js-add_btn"
+      type="button"
+    >
+      Make add
+    </button>
+
+    <button
+      class="js-remove_btn"
+      type="button"
+    >
+      Make remove
+    </button>
+
+    <!-- <form autocomplete="off" class="js-register-form">
+      <div role="group">
+        <label>
+          Mail
+          <input type="email" name="email"/>
+        </label>
+        <label >
+          Password
+          <input type="password" name="password">
+        </label>
+      </div>
+
+      <br>
+      <div role="group">
+        <b>Type subscribe:</b>
+        <label>
+          <input type="radio" name="subscription" value="free">
+          Free
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="basic">
+          Basic
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="pro">
+          Pro
+        </label>
+      </div>
+      <br>
+      <button type="submit">Registraition </button>
+    </form> -->
+
+    //--------------vvod i
+    ochistka-----------------
+    <!-- <p>
+<a href="/">Main page</a>
+</p>
+
+<button class="js-clear">Clear</button>
+
+<p class="output js-output"></p> -->
+
+    //------------------modal
+    window---------------
+    <p>
+      <a href="/">Main page</a>
+    </p>
+    <button type="button" data-action="open-modal" class="button">Open modal</button>
+
+    <div class="backdrop js-backdrop">
+      <div class="modal">
+        <h1>Modal window</h1>
+        <p>
+          Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit.
+          Nam, voluptatibus sequi. Minus
+          doloremque libero iure
+          excepturi blanditiis animi
+          repellat aperiam? Fugiat,
+          beatae atque. Delectus,
+          deserunt quaerat unde fuga
+          provident quidem?
+        </p>
+        <button type="button" data-action="close-modal" class="button">Close</button>
+      </div>
+    </div>
+
+    <br />
+    <label>
+      Name
+      <input
+        type="text"
+        class="js-input"
+      />
+    </label>
+
+    <p>
+      <label>
+        <input
+          type="checkbox"
+          class="js-license"
+        />
+        Agree offer license
+      </label>
+    </p>
+
+    <button
+      type="submit"
+      disabled
+      class="js-button"
+    >
+      Registraition <span>Anonim</span>
+    </button>
+
     <nav class="navigation">
       <ul class="nav_list">
         <li class="nav_item">
@@ -52,6 +169,12 @@
         </li>
       </ul>
     </nav>
+
+    <h1 class="title-4">
+      <span>This is title</span>
+    </h1>
+
+    <div class="js-products"></div>
 
     <div class="hero"></div>
 
@@ -88,6 +211,9 @@
         Edit
       </button>
     </div>
+
+    <button id="single">single</button>
+    <button id="multiple">multiple</button>
 
     <script
       src="./js/query_selector.js"
